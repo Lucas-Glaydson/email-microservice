@@ -26,7 +26,7 @@ public class EmailModel {
     private String text;
     @Column(name = "send_data_email")
     private LocalDateTime sendDataEmail;
-    @Column(name = "status_email")
+    @Column(name = "status_email")  @Enumerated(EnumType.STRING)
     private StatusEmail statusEmail;
 
     public EmailModel(RequestEmailDTO dto){
