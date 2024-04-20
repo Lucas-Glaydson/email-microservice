@@ -20,5 +20,5 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 ## Routes
 ### POST
 ```
-http://localhost:8080/email/send
+http://localhost:8090/email/send
 ```
