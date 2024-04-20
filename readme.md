@@ -5,7 +5,7 @@ This microservice has responsibility to send e-mail using gmail service and Spri
 
 ## Use mode
 
-To use this service, you just need to configure application.properties file with your credentials. You must get that credentials in gmail configuration.
+To use this service, you just need to configure application.properties file with your credentials. You must obtain these credentials from your Gmail setup.
 ### Here is an example.
 > You just need to change username and password. Remember this password is not your email password, it is generated for Google.
 ```
