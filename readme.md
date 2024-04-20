@@ -16,6 +16,20 @@ spring.mail.password=************
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 ```
+## Schema MySQL
+```
+CREATE TABLE IF NOT EXISTS `emails` (
+    `id` CHAR(36) NOT NULL,
+    `owner` VARCHAR(255) NOT NULL,
+    `email_from` VARCHAR(255) NOT NULL,
+    `email_to` VARCHAR(255) NOT NULL,
+    `subject` VARCHAR(255) NOT NULL,
+    `text` TEXT NOT NULL, 
+    `send_data_email` DATETIME NOT NULL,
+    `status_email` VARCHAR(255) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
 
 ## Routes
 ### POST
